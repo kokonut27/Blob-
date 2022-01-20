@@ -24,8 +24,7 @@ PREFIX = "-"
 
 def thync():
   res = requests.get("https://thync-API.jbloves27.repl.co/toggle")
-  data = res.content
-  return data
+  return res.content
 
 @client.event
 async def on_ready():
